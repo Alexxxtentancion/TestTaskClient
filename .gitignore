@@ -1,0 +1,6 @@
+
+/build
+/ext
+/.sencha
+/bootstrap.*
+/sass
