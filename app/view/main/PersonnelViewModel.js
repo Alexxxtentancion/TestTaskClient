@@ -15,7 +15,7 @@ Ext.define('MyTestApp.view.main.PersonnelViewModel', {
             proxy: {
                 
                 type: 'rest',
-                url: 'http://localhost:8000/mygridapi/persons/',
+                url: 'http://ggous.pythonanywhere.com/mygridapi/persons',
                 appendId:true,
                 reader: {
                     type: 'json',
