@@ -36,6 +36,9 @@ Ext.define('Grid.view.grid.Grid', {
         bind: {
             store: '{UserStore}'
         },
+        listeners: {
+            beforeChange: ''
+        },
         beforePageText: 'Страница',
         afterPageText: 'из {0}',
         displayMsg: 'Пользователи {0} - {1} из {2}'
@@ -59,7 +62,7 @@ Ext.define('Grid.view.grid.Grid', {
         }]
     }],
     // height:'auto
-    height:750
+    height:550
     
     
 })

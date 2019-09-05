@@ -1,6 +1,8 @@
 Ext.define('Grid.view.main.footer.Footer' ,{
     extend: 'Ext.panel.Panel',
     xtype: 'footerview',
+    title: 'Footer',
+    headerPosition:'bottom',
     layout:'fit',
     requires: [ 
         'Ext.plugin.Viewport',
@@ -9,12 +11,5 @@ Ext.define('Grid.view.main.footer.Footer' ,{
         'Grid.view.grid.Grid'
     ],
     reference: 'footerview',
-    // cls: 'footer',
     viewmodel: {},
-    items: [
-        {
-            xtype:'container',
-            // cls: 'footerviewtext'
-        }
-    ]
 })
