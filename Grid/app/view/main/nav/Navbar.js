@@ -5,13 +5,14 @@ Ext.define('Grid.view.main.nav.Navbar', {
                 'Ext.plugin.Viewport',
                 'Grid.view.main.MainController',
                 'Grid.view.main.MainModel',
-                'Grid.view.grid.Grid'
+                'Grid.view.grid.Grid',
+                'Grid.view.main.nav.NavbarController'
             ],
     layout:'fit',
     // width:'100',
     height: '100',
     // title: "App",
-
+    controller:'navbar',
     tabPosition:'left',
     tabRotation:0,
     reference:'navbar',
@@ -19,6 +20,11 @@ Ext.define('Grid.view.main.nav.Navbar', {
     tabPosition: 'left',
     items: [{
         title: 'Grid',
+        tabConfig: {
+            listeners:{
+                click: 'onGridClick'
+            }
+        },
         items: [{
             xtype:'userGrid',
             reference:'userListGrid'
@@ -26,8 +32,10 @@ Ext.define('Grid.view.main.nav.Navbar', {
         },
         {
             title:'Test',
-            listeners: {
-                click:function() {console.log('clicked')}
+            tabConfig: {
+                listeners:{
+                    click: 'onTestClick'
+                }
             }
         }]
 
