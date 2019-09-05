@@ -25,7 +25,10 @@ Ext.define('Grid.view.main.nav.Navbar', {
         }]
         },
         {
-            title:'Test'
+            title:'Test',
+            listeners: {
+                click:function() {console.log('clicked')}
+            }
         }]
 
 })

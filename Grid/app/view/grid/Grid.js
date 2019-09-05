@@ -36,9 +36,6 @@ Ext.define('Grid.view.grid.Grid', {
         bind: {
             store: '{UserStore}'
         },
-        listeners: {
-            beforeChange: ''
-        },
         beforePageText: 'Страница',
         afterPageText: 'из {0}',
         displayMsg: 'Пользователи {0} - {1} из {2}'
